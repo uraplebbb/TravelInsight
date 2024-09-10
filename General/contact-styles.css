@@ -1,0 +1,71 @@
+/* General body styling */
+
+  
+/* Contact Us section styling */
+.contact-us {
+    background-color: antiquewhite;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+    padding: 50px;
+}
+
+.contact-us h1 {
+    font-size: 2em;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    color: #555555;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.contact-us address {
+    margin: 20px 0;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Link styling */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+a:hover {
+    color: #004999;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .contact-us {
+        padding: 15px;
+    }
+    .contact-us h1 {
+        font-size: 1.5em;
+    }
+    .contact-us p, .contact-info p {
+        font-size: 0.9em;
+    }
+}

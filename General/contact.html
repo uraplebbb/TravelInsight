@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris the Traveller</title>
+    <link rel="stylesheet" href="common-styles.css" />
+    <link rel="stylesheet" href="contact-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- internal stylings -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .contact-us {
+        padding: 20px;
+      }
+
+      .contact-us h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .contact-us p {
+        font-size: 1.1em;
+        text-align: center;
+      }
+
+      .contact-info {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .contact-info p {
+        margin: 10px 0;
+      }
+
+      .contact-info a {
+        color: #ff7a00;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+      .form-group{
+        margin-left: 280px;
+      }
+
+      .contact-form {
+        /* max-width: 1500px; */
+        width: auto;
+        margin: 0 auto;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0px 30px rgba(0, 0, 0, 1);
+        background-color: #f9f9f9;
+      }
+
+      .contact-form h2 {
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .contact-form .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .contact-form label {
+        flex: 0.1;
+        font-weight: bold;
+        margin-left: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      .contact-form input, .contact-form textarea {
+        flex: 0.5;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      .contact-form textarea {
+        resize: vertical;
+        padding-bottom: 30px;
+      }
+
+      .contact-form button {
+        width: auto;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #ff7a00;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        margin-top: 10px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .contact-form button:hover {
+        background-color: #e66a00;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- navigation bar -->
+      <nav id="navbar" class="navbar">
+        <div class="logo">
+          <span class="large">Chris</span>
+          <span class="small">the</span>
+          <span class="medium">Traveller</span>
+        </div>
+        <div class="navigation">
+          <div class="firstnav">
+            <div class="social-medias">
+              <a href="https://x.com/"><img src="Icons/twitter.svg" alt="Twitter" /></a>
+              <a href="https://Instagram.com/"><img src="Icons/instagram.svg" alt="Instagram" /></a>
+              <a href="https://pinterest.com/"><img src="Icons/pinterest.svg" alt="Pinterest" /></a>
+              <a href="https://youtube.com/"><img src="Icons/youtube.svg" alt="YouTube" /></a>
+            </div>
+            <input type="text" class="Searchfield" id="searchInput" placeholder="Search...">
+            <div id="errorMessage" style="display: none;">No matching results</div>
+            <span class="material-symbols-outlined">
+              search
+              </span>
+            <input type="button" class="Buttonfield" onclick="redirectToLocalPage()" value="Register">
+          </div>
+          <ul class="secondnav">
+            <li><a href="../Index.html" class="">HOME</a></li>
+            <li class="dropdown">
+              <a href="About.html" class="">ABOUT ME</a>
+            </li>
+            <li class="dropdown">
+              <a href="Destination.html" class="">DESTINATIONS
+              <span class="material-symbols-outlined arrow"
+                >keyboard_arrow_down</span 
+              ></a>
+              <ul class="dropdown-content">
+                <li class="list"><a href="USA.html">USA</a></li>
+                <li class="list"><a href="Uk.html">UK</a></li>
+                <li class="list"><a href="cameroon.html">CAMEROON</a></li>
+                <li class="list"><a href="India.html">INDIA</a></li>
+                <li class="list"><a href="Haiti.html">HAITI</a></li>
+                <li class="list"><a href="Brazil.html">BRAZIL</a></li>
+              </ul>
+            </li>
+            <li><a href="Tips.html" class="">TRAVEL TIPS</a></li>
+            <li><a href="Blog.html" class="">BLOG</a></li>
+            <li><a href="contact.html" class="active">CONTACT ME</a></li>
+            <li><a href="../Galery.html">GALLERY</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="progress-bar"></div>
+    </header>
+    <main>
+      <!-- contact me body -->
+    <div class="contact-us">
+        <h1>Contact Us</h1>
+        <p>We are located at:</p>
+        <address>
+            <p>Chris the Traveller Office</p>
+            <p>100 Rick-Kid Avenue</p>
+            <p>16th Floor</p>
+            <p>New York, New York 10011</p>
+        </address>
+        <div class="contact-info">
+            <p>For review, TPG Award, and general licensing inquiries, please contact <a href="">WORK WITH US/</a></p>
+            <p>For ad sales and media/partnership inquiries, please contact <a href="mailto:partnerships@christhetraveller.com">partnerships@christhetraveller.com</a></p>
+            <p>For press and media inquiries, please contact <a href="mailto:press@christhetraveller.com">press@christhetraveller.com</a></p>
+            <p>For questions about travel or any of our content, please contact <a href="mailto:questions@christhetraveller.com">questions@christhetraveller.com</a></p>
+            <p>To send us tips, please contact <a href="mailto:tips@christhetraveller.com">tips@christhetraveller.com</a></p>
+            <p>For TPG App support, please contact <a href="mailto:support@christhetraveller.com">support@christhetraveller.com</a></p>
+        </div>
+        <!-- contact form -->
+        <div class="contact-form">
+          <h2>Leave Us a Message</h2>
+          <form id="contactForm" action="https://formspree.io/f/mvgpppao" method="POST">
+              <div class="form-group">
+                  <label for="firstName">First Name:</label>
+                  <input type="text" id="firstName" name="firstName" placeholder="FirstName"  required>
+              </div>
+              <div class="form-group">
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" id="lastName" name="lastName" placeholder="LastName" required>
+              </div>
+              <div class="form-group">
+                  <label for="message">Your Message:</label>
+                  <textarea id="message" name="message" rows="4"  required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+      
+    </div>
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+              <li><a href="About.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Travel Tips</h3>
+            <ul>
+              <li><a href="Tips">Start Here</a></li>
+              <li><a href="destination.html">Destinations</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="destination.html">Discover new places</a></li>
+              <li><a href="Tips.html">Web Stories</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Join Our Communities</h3>
+            <div class="social-media">
+              <a href="https://x.com/"><img src="Icons/twitter.svg" alt="Twitter" /></a>
+              <a href="https://instagram.com/"><img src="Icons/instagram.svg" alt="Instagram" /></a>
+              <a href="https://pinterest.com/"><img src="Icons/pinterest.svg" alt="Pinterest" /></a>
+              <a href="https://youtube.com/"><img src="Icons/youtube.svg" alt="YouTube" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright © 2024 Chris the Traveller Blog</p>
+          <p>Powered by Chris the traveller</p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+    <script src="Search.js"></script>
+
+    <script>
+      function redirectToLocalPage() {
+          window.location.href = 'register.html'; // Path to your local register.html file
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('submitButton').addEventListener('click', function() {
+                // Clear previous messages
+                document.getElementById('successMessages').style.display = 'none';
+                document.getElementById('errorMessagess').style.display = 'none';
+                document.getElementById('errorMessagess').innerHTML = '';
+
+                // Get form values
+                const firstName = document.getElementById('first-name').value.trim();
+                const lastName = document.getElementById('last-name').value.trim();
+                const email = document.getElementById('email').value.trim();
+
+                // Perform validations
+                let isValid = true;
+                let errorMessages = '';
+
+                if (!firstName) {
+                    errorMessages += 'First Name is required.<br>';
+                    isValid = false;
+                }
+                if (!lastName) {
+                    errorMessages += 'Last Name is required.<br>';
+                    isValid = false;
+                }
+                if (!email) {
+                    errorMessages += 'Email is required.<br>';
+                    isValid = false;
+                } else if (!validateEmail(email)) {
+                    errorMessages += 'Email is not valid.<br>';
+                    isValid = false;
+                }
+
+                // Display appropriate message
+                if (isValid) {
+                    document.getElementById('successMessages').style.display = 'block';
+                } else {
+                    document.getElementById('errorMessagess').innerHTML = errorMessages;
+                    document.getElementById('errorMessagess').style.display = 'block';
+                }
+            });
+
+            function validateEmail(email) {
+                // Basic email format validation
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailPattern.test(email);
+            }
+        });
+
+        // // Form submission handler
+        // document.getElementById('contactForm').addEventListener('submit', function(event) {
+        //     event.preventDefault();
+
+        //     const firstName = document.getElementById('firstName').value.trim();
+        //     const lastName = document.getElementById('lastName').value.trim();
+        //     const message = document.getElementById('message').value.trim();
+
+        //     // Here you would typically send the data to your server
+        //     console.log(`First Name: ${firstName}`);
+        //     console.log(`Last Name: ${lastName}`);
+        //     console.log(`Message: ${message}`);
+
+        //     // Reset form after submission
+        // //     document.getElementById('contactForm').reset();
+        // });
+  </script>
+</body>
+</html>

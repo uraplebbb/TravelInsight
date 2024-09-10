@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris the traveller</title>
+    <link rel="stylesheet" href="common-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 120px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .author, .date {
+            color: #777;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #0056b3;
+            margin-left: 0;
+        }
+
+        p {
+            color: #555;
+        }
+
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <nav id="navbar" class="navbar">
+        <div class="logo">
+          <span class="large">Chris</span>
+          <span class="small">the</span>
+          <span class="medium">Traveller</span>
+        </div>
+        <div class="navigation">
+          <div class="firstnav">
+            <div class="social-medias">
+              <a href="https://x.com/"><img src="Icons/twitter.svg" alt="Twitter" /></a>
+              <a href="https://Instagram.com/"><img src="Icons/instagram.svg" alt="Instagram" /></a>
+              <a href="https://pinterest.com/"><img src="Icons/pinterest.svg" alt="Pinterest" /></a>
+              <a href="https://youtube.com/"><img src="Icons/youtube.svg" alt="YouTube" /></a>
+            </div>
+            <input type="text" class="Searchfield" id="searchInput" placeholder="Search...">
+            <div id="errorMessage" style="display: none;">No matching results</div>
+            <span class="material-symbols-outlined">
+              search
+              </span>
+            <input type="button" class="Buttonfield" onclick="redirectToLocalPage()" value="Register">
+          </div>
+          <ul class="secondnav">
+            <li><a href="../Index.html" class="">HOME</a></li>
+            <li class="dropdown">
+              <a href="About.html">ABOUT ME</a>
+            </li>
+            <li class="dropdown">
+              <a href="destination.html">DESTINATIONS
+              <span class="material-symbols-outlined arrow"
+                >keyboard_arrow_down</span 
+              ></a>
+              <ul class="dropdown-content">
+                <li class="list"><a href="USA.html">USA</a></li>
+                <li class="list"><a href="Uk.html">UK</a></li>
+                <li class="list"><a href="cameroon.html">CAMEROON</a></li>
+                <li class="list"><a href="India.html">INDIA</a></li>
+                <li class="list"><a href="Haiti.html">HAITI</a></li>
+                <li class="list"><a href="Brazil.html">BRAZIL</a></li>
+              </ul>
+            </li>
+            <li><a href="Tips.html">TRAVEL TIPS</a></li>
+            <li><a href=Blog.html" class="active">BLOG</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+            <li><a href="../Galery.html">GALLERY</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="progress-bar"></div>
+    </header>
+
+    <div class="container">
+        <header>
+            <h1>25 Best Things To Do In Niagara Falls, Canada In 2024</h1>
+            <p class="author">By Chris The Traveller</p>
+            <p class="date">June 17, 2024</p>
+        </header>
+        <article>
+            <section>
+                <h2>1. Visit the Horseshoe Falls</h2>
+                <p>Experience the breathtaking beauty of Horseshoe Falls, the largest of the three falls that make up Niagara Falls. Take a boat tour for an up-close view of this natural wonder.</p>
+            </section>
+            <section>
+                <h2>2. Journey Behind the Falls</h2>
+                <p>Explore tunnels that take you behind the cascading water of Horseshoe Falls. This unique perspective offers an unforgettable experience of the falls' power and majesty.</p>
+            </section>
+            <section>
+                <h2>3. Niagara SkyWheel</h2>
+                <p>Ride the Niagara SkyWheel for stunning aerial views of the falls and the surrounding area. This 175-foot tall Ferris wheel provides a panoramic perspective, especially beautiful at night.</p>
+            </section>
+            <section>
+                <h2>4. Clifton Hill</h2>
+                <p>Stroll down Clifton Hill, known as the "Street of Fun." Enjoy attractions like museums, arcades, restaurants, and themed entertainment for the whole family.</p>
+            </section>
+            <section>
+                <h2>5. Niagara Parks Botanical Gardens</h2>
+                <p>Visit the Niagara Parks Botanical Gardens to see beautifully maintained gardens, including a rose garden with over 2,400 roses. The gardens are also home to the Butterfly Conservatory.</p>
+            </section>
+    <!-- Add more sections as needed up to 25 -->
+        </article>
+    </div>
+            <footer class="site-footer">
+                <div class="footer-content">
+                  <div class="footer-section">
+                    <h3>About</h3>
+                    <ul>
+                      <li><a href="About.html">About me</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-section">
+                    <h3>Travel Tips</h3>
+                    <ul>
+                      <li><a href="destination.html">Start Here</a></li>
+                      <li><a href="Tips.html">Packaging Tips</a></li>
+                      <li><a href="Blog.html">Blog</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                      <li><a href="destination.html">Discover new places</a></li>
+                      <li><a href="Tips.html">Web Stories</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-section">
+                    <h3>Join Our Communities</h3>
+                    <div class="social-media">
+                      <a href="https://x.com/"><img src="Icons/twitter.svg" alt="Twitter" /></a>
+                      <a href="https://instagram.com/"><img src="Icons/instagram.svg" alt="Instagram" /></a>
+                      <a href="https://pinterest.com/"><img src="Icons/pinterest.svg" alt="Pinterest" /></a>
+                      <a href="https://youtube.com/"><img src="Icons/youtube.svg" alt="YouTube" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <p>Copyright © 2024 Chris the Traveller Blog</p>
+                  <p>Powered by Chris the traveller</p>
+                </div>
+              </footer>
+            </main>
+            <script src="script.js"></script>
+            <script src="Search.js"></script>
+        
+            <script>
+              function redirectToLocalPage() {
+                  window.location.href = 'General/register.html'; // Path to your local register.html file
+              }
+              document.addEventListener('DOMContentLoaded', function() {
+                    document.getElementById('submitButton').addEventListener('click', function() {
+                        // Clear previous messages
+                        document.getElementById('successMessages').style.display = 'none';
+                        document.getElementById('errorMessagess').style.display = 'none';
+                        document.getElementById('errorMessagess').innerHTML = '';
+        
+                        // Get form values
+                        const firstName = document.getElementById('first-name').value.trim();
+                        const lastName = document.getElementById('last-name').value.trim();
+                        const email = document.getElementById('email').value.trim();
+        
+                        // Perform validations
+                        let isValid = true;
+                        let errorMessages = '';
+        
+                        if (!firstName) {
+                            errorMessages += 'First Name is required.<br>';
+                            isValid = false;
+                        }
+                        if (!lastName) {
+                            errorMessages += 'Last Name is required.<br>';
+                            isValid = false;
+                        }
+                        if (!email) {
+                            errorMessages += 'Email is required.<br>';
+                            isValid = false;
+                        } else if (!validateEmail(email)) {
+                            errorMessages += 'Email is not valid.<br>';
+                            isValid = false;
+                        }
+        
+                        // Display appropriate message
+                        if (isValid) {
+                            document.getElementById('successMessages').style.display = 'block';
+                        } else {
+                            document.getElementById('errorMessagess').innerHTML = errorMessages;
+                            document.getElementById('errorMessagess').style.display = 'block';
+                        }
+                    });
+        
+                    function validateEmail(email) {
+                        // Basic email format validation
+                        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                        return emailPattern.test(email);
+                    }
+                });
+          </script>
+        
+    </div>
+</body>
+</html>

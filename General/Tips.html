@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris the traveller</title>
+    <!-- external links -->
+    <link rel="stylesheet" href="tips.css" />
+    <link rel="stylesheet" href="common-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+  </head>
+  <body>
+    <header>
+      <!-- navigation bar -->
+      <nav id="navbar" class="navbar">
+        <div class="logo">
+          <span class="large">Chris</span>
+          <span class="small">the</span>
+          <span class="medium">Traveller</span>
+        </div>
+        <div class="navigation">
+          <div class="firstnav">
+            <div class="social-medias">
+              <a href="https://x.com/"><img src="Icons/twitter.svg" alt="Twitter" /></a>
+              <a href="https://Instagram.com/"><img src="Icons/instagram.svg" alt="Instagram" /></a>
+              <a href="https://pinterest.com/"><img src="Icons/pinterest.svg" alt="Pinterest" /></a>
+              <a href="https://youtube.com/"><img src="Icons/youtube.svg" alt="YouTube" /></a>
+            </div>
+            <!-- search bar -->
+            <input type="text" class="Searchfield" id="searchInput" placeholder="Search...">
+            <div id="errorMessage" style="display: none;">No matching results</div>
+            <span class="material-symbols-outlined">
+              search
+              </span>
+            <input type="button" class="Buttonfield" onclick="redirectToLocalPage()" value="Register">
+          </div>
+          <ul class="secondnav">
+            <li><a href="../Index.html" class="">HOME</a></li>
+            <li class="dropdown">
+              <a href="About.html">ABOUT ME</a>
+            </li>
+            <li class="dropdown">
+              <a href="destination.html" class="">DESTINATIONS
+              <span class="material-symbols-outlined arrow"
+                >keyboard_arrow_down</span 
+              ></a>
+              <ul class="dropdown-content">
+                <li class="list"><a href="USA.html">USA</a></li>
+                <li class="list"><a href="Uk.html">UK</a></li>
+                <li class="list"><a href="cameroon.html">CAMEROON</a></li>
+                <li class="list"><a href="India.html">INDIA</a></li>
+                <li class="list"><a href="Haiti.html">HAITI</a></li>
+                <li class="list"><a href="Brazil.html">BRAZIL</a></li>
+              </ul>
+            </li>
+            <li><a href="Tips.html" class="active">TRAVEL TIPS</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+            <li><a href="../Galery.html">GALLERY</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="progress-bar"></div>
+    </header>
+    <!-- tips body -->
+    <h1 class="heading0">Category: travel tips</h1>
+    <div class="container">
+      <div class="article-grid">
+        <div class="article">
+            <img src="../Images/saving1.jpeg" alt="Traveling in Machu Picchu">
+            <h2>Top 10 Travel Packing Tips</h2>
+            <p>Learn how to pack efficiently for any trip with our top 10 travel packing tips. From essentials to space-saving hacks, we've got you covered.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/saving2.jpeg" alt="Beach Paradise">
+            <h2>Budget Travel Tips for Saving Money</h2>
+            <p>Discover the best budget travel tips to help you save money on flights, accommodation, and activities while still enjoying your trip.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/saving7.jpeg" alt="Cultural Heritage">
+            <h2>How to Stay Safe While Traveling</h2>
+            <p>Safety should always be a priority when traveling. Here are some essential tips to ensure you stay safe and secure on your adventures.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/saving3.jpeg" alt="African Safari">
+            <h2>Travel Health Tips for a Hassle-Free Trip</h2>
+            <p>Stay healthy on your travels with our practical health tips. Learn about vaccinations, travel insurance, and what to pack in your medical kit.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/saving4.jpeg" alt="Luxury Travel">
+            <h2>How to Find Cheap Flights</h2>
+            <p>Want to find the best deals on flights? Check out our tips on how to find cheap flights and make the most of your travel budget.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/saving5.jpeg" alt="Backpacking Adventure">
+            <h2>Solo Travel Tips for First-Timers</h2>
+            <p>Traveling alone for the first time can be daunting. Here are some solo travel tips to help you prepare and enjoy your solo adventures.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/saving6.jpeg" alt="Solo Travel">
+            <h2>How to Avoid Common Travel Scams</h2>
+            <p>Be aware of common travel scams and learn how to avoid them with our expert tips. Stay safe and enjoy your trip without any hassle.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/saving7.jpeg" alt="Foodie Adventures">
+            <h2>Travel Tips for Staying Connected</h2>
+            <p>Stay connected with family and friends while traveling with our tips on using mobile phones, internet access, and staying online.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/saving8.jpeg" alt="Road Trip">
+            <h2>Tips for Traveling with Kids</h2>
+            <p>Traveling with kids can be challenging. Here are some tips to make your family trips more enjoyable and stress-free.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/saving11.webp" alt="Mountain Hiking">
+            <h2>Essential Travel Apps You Need</h2>
+            <p>Make your travels easier with these essential travel apps. From navigation to language translation, find out which apps are must-haves.</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/image10.jpeg" alt="Beach Vacation">
+            <h2>Why You Should Plan Your Next Trip with Delta Vacations</h2>
+            <p>This post was written in partnership with Delta Vacations, but all opinions are mine. The holiday season is fast approaching, and if you’re anything like...</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+        <div class="article">
+            <img src="../Images/image5.jpeg" alt="Multi-Generational Family Vacation">
+            <h2>How to Plan Your Next Multi-Generational Family Vacation</h2>
+            <p>So, you’ve travelled with your friends, your significant other, and even strangers on a group trip! But what about going on vacation with your grandparents...</p>
+            <a href="register.html">Register for More »</a>
+        </div>
+    </div>
+        <!-- sidebar -->
+        <aside class="sidebar">
+          <!-- Social Media Links -->
+          <div class="sidebar-section">
+              <h3>Follow Us</h3>
+              <ul>
+                  <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                  <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                  <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+              </ul>
+          </div>
+          <!-- Pages -->
+          <div class="sidebar-section">
+              <h3>Pages</h3>
+              <ul>
+                  <li><a href="../Index.html">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li><a href="Blog.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <!-- About the Blog -->
+          <div class="sidebar-section">
+              <h3>About This Blog</h3>
+              <p>Welcome to our travel blog where we share exciting travel stories, tips, and guides to help you make the most of your adventures. Join us as we explore the world, one destination at a time.</p>
+          </div>
+          <!-- Travel Resources -->
+          <div class="sidebar-section">
+              <h3>Travel Resources</h3>
+              <ul>
+                  <li><a href="Tips.html">Packing Tips</a></li>
+                  <li><a href="About.html">Find more About me</a></li>
+                  <li><a href="destination.html">Discover the world</a></li>
+
+              </ul>
+          </div>
+      </aside>
+      
+    </div>
+    <!-- newsletter -->
+    <section class="newsletter">
+      <p class="first-P">CHRIS THE TRAVELLER DAILY NEWSLETTER</p>
+      <h1>Fuel your adventure with the latest information</h1>
+      <p class="second-P">Subscribe to my Newsletter to receive updates and information about trips, latest videos, photos, and tips!</p>
+      <form id="newsletter-form">
+          <input type="text" id="first-name" name="firstName" placeholder="First Name" required>
+          <input type="text" id="last-name" name="lastName" placeholder="Last Name" required>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+
+          <!-- Success and Error Message Display -->
+          <div id="successMessages" class="success-messages">Registration successful!</div>
+          <div id="errorMessagess" class="error-messages"></div>
+
+          <button type="button" id="submitButton">Subscribe</button>
+      </form>
+      <p class="first-p">I would like to subscribe to Chris the traveller newsletters and special email promotions. <br> Chris will not sell your email. See PRIVACY POLICY.</p>
+  </section>
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+              <li><a href="About.html">About me</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Travel Tips</h3>
+            <ul>
+              <li><a href="Tips.html">Start Here</a></li>
+              <li><a href="Tips.html">Packaging Tips</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="destination.html">Discover new places</a></li>
+              <li><a href="Tips.html">Web Stories</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Join Our Communities</h3>
+            <div class="social-media">
+              <a href="https://x.com/"><img src="Icons/twitter.svg" alt="Twitter" /></a>
+              <a href="https://instagram.com/"><img src="Icons/instagram.svg" alt="Instagram" /></a>
+              <a href="https://pinterest.com/"><img src="Icons/pinterest.svg" alt="Pinterest" /></a>
+              <a href="https://youtube.com/"><img src="Icons/youtube.svg" alt="YouTube" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright © 2024 Chris the Traveller Blog</p>
+          <p>Powered by Chris the traveller</p>
+        </div>
+      </footer>
+      <!-- External Scripts -->
+      <script src="script.js"></script>
+    <script src="Search.js"></script>
+      <!-- Internal script -->
+    <script>
+      function redirectToLocalPage() {
+          window.location.href = 'register.html'; // Path to your local register.html file
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('submitButton').addEventListener('click', function() {
+                // Clear previous messages
+                document.getElementById('successMessages').style.display = 'none';
+                document.getElementById('errorMessagess').style.display = 'none';
+                document.getElementById('errorMessagess').innerHTML = '';
+
+                // Get form values
+                const firstName = document.getElementById('first-name').value.trim();
+                const lastName = document.getElementById('last-name').value.trim();
+                const email = document.getElementById('email').value.trim();
+
+                // Perform validations
+                let isValid = true;
+                let errorMessages = '';
+
+                if (!firstName) {
+                    errorMessages += 'First Name is required.<br>';
+                    isValid = false;
+                }
+                if (!lastName) {
+                    errorMessages += 'Last Name is required.<br>';
+                    isValid = false;
+                }
+                if (!email) {
+                    errorMessages += 'Email is required.<br>';
+                    isValid = false;
+                } else if (!validateEmail(email)) {
+                    errorMessages += 'Email is not valid.<br>';
+                    isValid = false;
+                }
+
+                // Display appropriate message
+                if (isValid) {
+                    document.getElementById('successMessages').style.display = 'block';
+                } else {
+                    document.getElementById('errorMessagess').innerHTML = errorMessages;
+                    document.getElementById('errorMessagess').style.display = 'block';
+                }
+            });
+
+            function validateEmail(email) {
+                // Basic email format validation
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailPattern.test(email);
+            }
+        });
+  </script>
+
+</body>
+</html>

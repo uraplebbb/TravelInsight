@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris the Traveller</title>
+    <link rel="stylesheet" href="General/common-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  <!-- Internal css -->
+<style>
+    h1{
+        margin-top: 140px;
+        font-family: dancing script;
+        margin-left: 600px;
+        padding: 10px;
+        width : auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 40px;
+      padding: 70px;
+    }
+  
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.745);
+      cursor: pointer;
+    }
+  
+    .gallery-item img {
+      width: 100%;
+      height: 300px;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .gallery-item img:hover {
+      transform: scale(1.15);
+    }
+
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 80px;
+      left: 0;
+      top: 120px;
+      width: 100%;
+      height: 100%;
+      overflow: 400px;
+      background-color: rgba(0,0,0,0.89);
+    }
+
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-width: 700px){
+      .modal-content {
+        width: 100%;
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+      <!-- navigation bar -->
+      <nav id="navbar" class="navbar">
+        <div class="logo">
+          <span class="large">Chris</span>
+          <span class="small">the</span>
+          <span class="medium">Traveller</span>
+        </div>
+        <div class="navigation">
+          <div class="firstnav">
+            <div class="social-medias">
+              <a href="https://x.com/"><img src="Icons/twitter.svg" alt="Twitter" /></a>
+              <a href="https://Instagram.com/"><img src="Icons/instagram.svg" alt="Instagram" /></a>
+              <a href="https://pinterest.com/"><img src="Icons/pinterest.svg" alt="Pinterest" /></a>
+              <a href="https://youtube.com/"><img src="Icons/youtube.svg" alt="YouTube" /></a>
+            </div>
+            <input type="text" class="Searchfield" id="searchInput" placeholder="Search...">
+            <div id="errorMessage" style="display: none;">No matching results</div>
+            <span class="material-symbols-outlined">
+              search
+              </span>
+            <input type="button" class="Buttonfield" onclick="redirectToLocalPage()" value="Register">
+          </div>
+          <ul class="secondnav">
+            <li><a href="Index.html" class="">HOME</a></li>
+            <li class="dropdown">
+              <a href="General/About.html">ABOUT ME</a>
+            </li>
+            <li class="dropdown">
+              <a href="General/destination.html">DESTINATIONS
+              <span class="material-symbols-outlined arrow"
+                >keyboard_arrow_down</span 
+              ></a>
+              <ul class="dropdown-content">
+                <li class="list"><a href="General/destination.html">ARICA</a></li>
+                <li class="list"><a href="General/destination.html">EUROPE</a></li>
+                <li class="list"><a href="General/destination.html">AMERICA</a></li>
+                <li class="list"><a href="General/destination.html">ASIA</a></li>
+                <li class="list"><a href="General/destination.html">AUSTRALIA</a></li>
+              </ul>
+            </li>
+            <li><a href="General/Tips.html">TRAVEL TIPS</a></li>
+            <li><a href="General/Blog.html">BLOG</a></li>
+            <li><a href="General/contact.html">CONTACT ME</a></li>
+            <li><a href="../Galery.html" class="active">GALLERY</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="progress-bar"></div>
+    </header>
+    <!-- gallery body -->
+    <h1>Stylish Photo Gallery</h1>
+
+    <div class="gallery">
+      <div class="gallery-item">
+          <img src="Images/gallery1.jpeg" alt="Nature">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery2.jpeg" alt="Architecture">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery3.jpeg" alt="People">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery4.jpeg" alt="Animals">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery5.jpeg" alt="Tech">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery6.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery7.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery8.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery9.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery10.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery11.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery12.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery15.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/Image10.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/gallery1.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/image1.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/image3.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/image4.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/image5.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+          <img src="Images/image6.jpeg" alt="Random">
+      </div>
+      <div class="gallery-item">
+        <img src="Images/image7.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/image8.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/Image10.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/image9.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/uk.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/USA.webp" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/india.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/pexels-kelly-1179532-17290983.jpg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/brazil.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/nigeria.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/Niagara-Falls.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/itenaries.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/cameroon.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/gallery1.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/gallery2.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/gallery3.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/gallery4.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/gallery5.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/gallery6.jpeg" alt="Random">
+     </div>
+     <div class="gallery-item">
+      <img src="Images/gallery7.jpeg" alt="Random">
+     </div>
+  </div>
+
+    <!-- Modal for enlarged images -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+    </div>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About</h3>
+            <ul>
+              <li><a href="General/About.html">About me</a></li>
+              <li><a href="General/contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Travel Tips</h3>
+            <ul>
+              <li><a href="General/destination.html">Start Here</a></li>
+              <li><a href="General/Tips.html">Packaging Tips</a></li>
+              <li><a href="General/Blog.html">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="General/destination.html">Discover new places</a></li>
+              <li><a href="General/Tips.html">Web Stories</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Join Our Communities</h3>
+            <div class="social-media">
+              <a href="https://x.com/"><img src="Icons/twitter.svg" alt="Twitter" /></a>
+              <a href="https://instagram.com/"><img src="Icons/instagram.svg" alt="Instagram" /></a>
+              <a href="https://pinterest.com/"><img src="Icons/pinterest.svg" alt="Pinterest" /></a>
+              <a href="https://youtube.com/"><img src="Icons/youtube.svg" alt="YouTube" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright © 2024 Chris the Traveller Blog</p>
+          <p>Powered by Chris the traveller</p>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+    <script src="Search.js"></script>
+
+    <script>
+      function redirectToLocalPage() {
+          window.location.href = 'General/register.html'; // Path to your local register.html file
+      }
+      document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('submitButton').addEventListener('click', function() {
+                // Clear previous messages
+                document.getElementById('successMessages').style.display = 'none';
+                document.getElementById('errorMessagess').style.display = 'none';
+                document.getElementById('errorMessagess').innerHTML = '';
+
+                // Get form values
+                const firstName = document.getElementById('first-name').value.trim();
+                const lastName = document.getElementById('last-name').value.trim();
+                const email = document.getElementById('email').value.trim();
+
+                // Perform validations
+                let isValid = true;
+                let errorMessages = '';
+
+                if (!firstName) {
+                    errorMessages += 'First Name is required.<br>';
+                    isValid = false;
+                }
+                if (!lastName) {
+                    errorMessages += 'Last Name is required.<br>';
+                    isValid = false;
+                }
+                if (!email) {
+                    errorMessages += 'Email is required.<br>';
+                    isValid = false;
+                } else if (!validateEmail(email)) {
+                    errorMessages += 'Email is not valid.<br>';
+                    isValid = false;
+                }
+
+                // Display appropriate message
+                if (isValid) {
+                    document.getElementById('successMessages').style.display = 'block';
+                } else {
+                    document.getElementById('errorMessagess').innerHTML = errorMessages;
+                    document.getElementById('errorMessagess').style.display = 'block';
+                }
+            });
+
+            function validateEmail(email) {
+                // Basic email format validation
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailPattern.test(email);
+            }
+        });
+
+        // Modal Image Gallery JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('myModal');
+            const modalImg = document.getElementById('img01');
+            const images = document.querySelectorAll('.gallery-item img');
+            const close = document.getElementsByClassName('close')[0];
+
+            images.forEach(img => {
+                img.onclick = function() {
+                    modal.style.display = 'block';
+                    modalImg.src = this.src;
+                }
+            });
+
+            close.onclick = function() {
+                modal.style.display = 'none';
+            }
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            }
+        });
+  </script>
+
+  </body>
+</html>
