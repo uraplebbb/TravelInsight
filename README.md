@@ -1,7 +1,7 @@
-# Travel Insight
+# TravelInsight
 
 ## Overview
-Travel Insight is a web application designed to analyze and provide reliable information about destinations around the world. This site delivers expert advice, tips, activities, accommodations, and stunning visuals to enhance the travel experience for adventurers.
+TravelInsight is a web application designed to analyze and provide reliable information about destinations around the world. This site delivers expert advice, tips, activities, accommodations, and stunning visuals to enhance the travel experience for adventurers.
 
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
